@@ -1,0 +1,24 @@
+# execute
+# Currently supported platforms: Spigot, Velocity
+# Compatible platforms: Spigot, BungeeCord, Velocity
+[plugin]
+    enabled=true
+    # If you would like to opt out from including the name of the commands excecuted below in stats. THIS DOES NOT OPT YOU OUT FROM BSTATS!
+    include-command-in-stats=true
+
+# Commands:
+# Use cron expressions to schedule commands (https://crontab.guru/ to generate cron expressions if you are unfamiliar)
+# If you use OskarsMC-Plugins/broadcast, use "broadcast-id <id>"
+[commands]
+    "* * * * *" = [
+        "say This Message Is Sent Every Minute!",
+        "say And so is this one!"
+    ]
+
+    "0 0 * * *" = [
+        "say Midnight Strikes!"
+    ]
+
+# Please don't touch
+[developer-info]
+    config-version=0.1

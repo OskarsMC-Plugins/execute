@@ -1,0 +1,10 @@
+{
+  "id":"execute",
+  "name":"execute",
+  "version":"${project.version}",
+  "description":"Plugin to schedule execution of commands on multiple platforms",
+  "url":"https://software.oskarsmc.com/",
+  "authors":["OskarsMC","OskarZyg"],
+  "dependencies":[],
+  "main":"com.oskarsmc.execute.ExecuteVelocity"
+}

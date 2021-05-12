@@ -1,0 +1,8 @@
+name: execute
+version: ${project.version}
+main: com.oskarsmc.execute.ExecuteSpigot
+api-version: 1.16
+prefix: execute
+authors: [ OskarsMC, OskarZyg ]
+description: Plugin to schedule execution of commands on multiple platforms
+website: https://software.oskarsmc.com/

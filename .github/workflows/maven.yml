@@ -1,0 +1,31 @@
+name: Build "execute"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ 11, 16 ]
+      fail-fast: true
+    steps:
+      # Build the things
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: ${{ matrix.java }}
+      - run: mvn clean package
+      - run: mkdir staging
+      - run: cp execute-spigot/target/*.jar staging # Move files
+      - run: cp execute-bungeecord/target/*.jar staging # Move files
+      - run: cp transfer-velocity/target/*.jar staging # Move files
+      - run: rm -r staging/original-*.jar # Delete unshaded files
+      - uses: actions/upload-artifact@v2 # Upload
+        with:
+          name: message
+          path: staging/*
+          retention-days: 10 # Delete artifacts after 10 days
