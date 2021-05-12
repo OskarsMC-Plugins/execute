@@ -22,7 +22,7 @@ jobs:
       - run: mkdir staging
       - run: cp execute-spigot/target/*.jar staging # Move files
       - run: cp execute-bungeecord/target/*.jar staging # Move files
-      - run: cp transfer-velocity/target/*.jar staging # Move files
+      - run: cp execute-velocity/target/*.jar staging # Move files
       - run: rm -r staging/original-*.jar # Delete unshaded files
       - uses: actions/upload-artifact@v2 # Upload
         with:
