@@ -26,6 +26,6 @@ jobs:
       - run: rm -r staging/original-*.jar # Delete unshaded files
       - uses: actions/upload-artifact@v2 # Upload
         with:
-          name: message
+          name: execute
           path: staging/*
           retention-days: 10 # Delete artifacts after 10 days
