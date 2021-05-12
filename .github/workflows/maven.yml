@@ -19,11 +19,11 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - run: mvn clean package
-      - run: mkdir staging
-      - run: cp execute-spigot/target/*.jar staging # Move files
-      - run: cp execute-bungeecord/target/*.jar staging # Move files
-      - run: cp execute-velocity/target/*.jar staging # Move files
-      - run: rm -r staging/original-*.jar # Delete unshaded files
+      - run: mkdir -p staging/${{ matrix.java }}/
+      - run: cp execute-spigot/target/*.jar staging/${{ matrix.java }} # Move files
+      - run: cp execute-bungeecord/target/*.jar staging/${{ matrix.java }} # Move files
+      - run: cp execute-velocity/target/*.jar staging/${{ matrix.java }} # Move files
+      - run: rm -r staging/${{ matrix.java }}/original-*.jar # Delete unshaded files
       - uses: actions/upload-artifact@v2 # Upload
         with:
           name: execute
