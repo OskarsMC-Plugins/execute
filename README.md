@@ -2,14 +2,18 @@
 A plugin to schedule execution of commands on multiple platforms
 
 ## Platforms:
-### Spigot
-<a href="https://bstats.org/plugin/bukkit/execute-spigot/11307"> <img src="https://img.shields.io/bstats/servers/11307?color=green&label=Servers%3A&style=for-the-badge"> </a>
-
-### Velocity
-<a href="https://bstats.org/plugin/velocity/execute-velocity/11308"> <img src="https://img.shields.io/bstats/servers/11308?color=green&label=Servers%3A&style=for-the-badge"> </a>
-
-### BungeeCord
-<a href="https://bstats.org/plugin/bungeecord/execute-bungee/11309"> <img src="https://img.shields.io/bstats/servers/11309?color=green&label=Servers%3A&style=for-the-badge"></a>
+<table>
+    <tr>
+        <th>Spigot</th>
+        <th>Velocity</th>
+        <th>BungeeCord</th>
+    </tr>
+    <tr>
+        <td><a href="https://bstats.org/plugin/bukkit/execute-spigot/11307"> <img src="https://img.shields.io/bstats/servers/11307?color=green&label=Servers%3A&style=for-the-badge"></a></td>
+        <td><a href="https://bstats.org/plugin/velocity/execute-velocity/11308"> <img src="https://img.shields.io/bstats/servers/11308?color=green&label=Servers%3A&style=for-the-badge"> </a></td>
+        <td><a href="https://bstats.org/plugin/bungeecord/execute-bungee/11309"> <img src="https://img.shields.io/bstats/servers/11309?color=green&label=Servers%3A&style=for-the-badge"></a></td>
+    </tr>
+</table>
 
 ## Configuration:
 ```toml
@@ -39,3 +43,6 @@ A plugin to schedule execution of commands on multiple platforms
     config-version=0.1
 ```
 The configuration uses UNIX Cron Expressions.
+
+# Downloads
+Get the latest release <a href="https://github.com/OskarsMC-Plugins/execute">here</a>
