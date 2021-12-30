@@ -1,4 +1,4 @@
-package com.oskarmc.execute.common.adapters;
+package com.oskarsmc.execute.common.adapters;
 
 public class LoggerAdapter {
     public static void info(Object logger, String message) {

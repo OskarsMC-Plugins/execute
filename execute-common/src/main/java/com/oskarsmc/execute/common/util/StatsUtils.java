@@ -1,10 +1,10 @@
-package com.oskarmc.execute.common.util;
+package com.oskarsmc.execute.common.util;
 
 import com.cronutils.mapper.CronMapper;
 import com.cronutils.model.CronType;
 import com.cronutils.model.definition.CronDefinitionBuilder;
 import com.cronutils.parser.CronParser;
-import com.oskarmc.execute.common.configuration.ExecuteSettings;
+import com.oskarsmc.execute.common.configuration.ExecuteSettings;
 import org.bstats.charts.AdvancedPie;
 import org.bstats.charts.CustomChart;
 

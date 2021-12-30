@@ -1,14 +1,14 @@
 package com.oskarsmc.execute.bungeecord;
 
-import com.oskarmc.execute.common.configuration.ExecuteSettings;
+import com.oskarsmc.execute.common.configuration.ExecuteSettings;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 import org.bstats.bungeecord.Metrics;
 import org.bstats.charts.CustomChart;
 import org.bstats.charts.SingleLineChart;
 import org.quartz.SchedulerException;
-import com.oskarmc.execute.common.util.ExecuteTemplate;
-import com.oskarmc.execute.common.util.StatsUtils;
+import com.oskarsmc.execute.common.util.ExecuteTemplate;
+import com.oskarsmc.execute.common.util.StatsUtils;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;
