@@ -1,4 +1,4 @@
-package com.oskarsmc.execute;
+package com.oskarsmc.execute.spigot;
 
 import org.bukkit.Bukkit;
 import org.quartz.CronTrigger;

@@ -1,4 +1,4 @@
-package adapters;
+package com.oskarmc.execute.common.adapters;
 
 public class LoggerAdapter {
     public static void info(Object logger, String message) {

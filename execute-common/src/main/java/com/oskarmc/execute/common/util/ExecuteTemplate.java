@@ -1,6 +1,6 @@
-package util;
+package com.oskarmc.execute.common.util;
 
-import configuration.ExecuteSettings;
+import com.oskarmc.execute.common.configuration.ExecuteSettings;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 

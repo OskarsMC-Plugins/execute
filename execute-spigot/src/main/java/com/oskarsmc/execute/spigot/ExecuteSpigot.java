@@ -1,14 +1,14 @@
-package com.oskarsmc.execute;
+package com.oskarsmc.execute.spigot;
 
-import configuration.ExecuteSettings;
+import com.oskarmc.execute.common.configuration.ExecuteSettings;
 import org.bstats.bukkit.Metrics;
 import org.bstats.charts.CustomChart;
 import org.bstats.charts.SingleLineChart;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.quartz.SchedulerException;
-import util.ExecuteTemplate;
-import util.StatsUtils;
+import com.oskarmc.execute.common.util.ExecuteTemplate;
+import com.oskarmc.execute.common.util.StatsUtils;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;

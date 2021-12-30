@@ -1,7 +1,6 @@
-package util;
+package com.oskarmc.execute.common.util;
 
-import com.moandjiezana.toml.Toml;
-import configuration.ExecuteSettings;
+import com.oskarmc.execute.common.configuration.ExecuteSettings;
 
 public class VersionUtils {
 

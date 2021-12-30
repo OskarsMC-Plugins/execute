@@ -1,24 +1,21 @@
-package com.oskarsmc.execute;
+package com.oskarsmc.execute.velocity;
 
 import com.google.inject.Inject;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.proxy.ProxyShutdownEvent;
-import com.velocitypowered.api.plugin.Plugin;
 import com.velocitypowered.api.plugin.annotation.DataDirectory;
 import com.velocitypowered.api.proxy.ProxyServer;
-import configuration.ExecuteSettings;
+import com.oskarmc.execute.common.configuration.ExecuteSettings;
 import org.bstats.charts.CustomChart;
 import org.bstats.charts.SingleLineChart;
 import org.bstats.velocity.Metrics;
 import org.quartz.*;
-import org.quartz.impl.StdSchedulerFactory;
 import org.slf4j.Logger;
-import util.ExecuteTemplate;
-import util.StatsUtils;
+import com.oskarmc.execute.common.util.ExecuteTemplate;
+import com.oskarmc.execute.common.util.StatsUtils;
 
 import java.nio.file.Path;
-import java.text.ParseException;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;
 

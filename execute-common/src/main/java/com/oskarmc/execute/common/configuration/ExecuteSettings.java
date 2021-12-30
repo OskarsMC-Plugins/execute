@@ -1,21 +1,17 @@
-package configuration;
+package com.oskarmc.execute.common.configuration;
 
-import adapters.LoggerAdapter;
-import com.cronutils.builder.CronBuilder;
+import com.oskarmc.execute.common.adapters.LoggerAdapter;
 import com.cronutils.mapper.CronMapper;
-import com.cronutils.model.Cron;
 import com.cronutils.model.CronType;
-import com.cronutils.model.definition.CronDefinition;
 import com.cronutils.model.definition.CronDefinitionBuilder;
 import com.cronutils.parser.CronParser;
 import com.moandjiezana.toml.Toml;
-import util.VersionUtils;
+import com.oskarmc.execute.common.util.VersionUtils;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
