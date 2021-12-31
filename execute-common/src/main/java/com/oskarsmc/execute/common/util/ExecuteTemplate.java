@@ -5,14 +5,17 @@ import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
 import java.text.ParseException;
+import java.util.Properties;
 
 public class ExecuteTemplate {
     public Scheduler scheduler;
 
     public ExecuteTemplate(ExecuteSettings executeSettings, Class<? extends Job> cronJobClass) {
-        SchedulerFactory schedulerFactory = new StdSchedulerFactory();
+        Properties schedulerProperties = new Properties();
+        schedulerProperties.setProperty("org.quartz.threadPool.threadCount", "10");
 
         try {
+            SchedulerFactory schedulerFactory = new StdSchedulerFactory(schedulerProperties);
             this.scheduler = schedulerFactory.getScheduler();
 
             for (String s : executeSettings.getCommands().keySet()) {

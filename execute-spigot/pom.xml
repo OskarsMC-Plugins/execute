@@ -26,11 +26,59 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <relocations>
                         <relocation>
                             <pattern>org.bstats</pattern>
-                            <shadedPattern>com.oskarsmc.relocated.bstats</shadedPattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.org.bstats</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.moandjiezana</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.com.moandjiezana.toml</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.cronutils</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.com.cronutils.cronutils</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>org.quartz</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.org.quartz</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>org.terracotta.quartz</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.org.terracotta.quartz</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>javassist</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.javassist</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>javax.el</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.javax.el</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.google.gson</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.com.google.gson</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.mchange</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.com.mchange</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.sun.el</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.com.sun.el</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.zaxxer.hikari</pattern>
+                            <shadedPattern>com.oskarsmc.execute.relocated.com.zaxxer.hikari</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
@@ -67,6 +115,12 @@
             <artifactId>execute-common</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.bstats</groupId>

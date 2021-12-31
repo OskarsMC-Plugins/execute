@@ -1,4 +1,4 @@
 name: execute
 version: ${project.version}
-main: com.oskarsmc.execute.ExecuteBungeeCord
+main: com.oskarsmc.execute.bungeecord.ExecuteBungeeCord
 description: Plugin to schedule execution of commands on multiple platforms

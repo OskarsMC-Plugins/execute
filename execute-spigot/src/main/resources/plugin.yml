@@ -1,6 +1,6 @@
 name: execute
 version: ${project.version}
-main: com.oskarsmc.execute.ExecuteSpigot
+main: com.oskarsmc.execute.spigot.ExecuteSpigot
 api-version: 1.13
 prefix: execute
 authors: [ OskarsMC, OskarZyg ]

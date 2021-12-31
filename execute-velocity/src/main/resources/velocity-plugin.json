@@ -6,5 +6,5 @@
   "url":"https://software.oskarsmc.com/",
   "authors":["OskarsMC","OskarZyg"],
   "dependencies":[],
-  "main":"com.oskarsmc.execute.ExecuteVelocity"
+  "main":"com.oskarsmc.execute.velocity.ExecuteVelocity"
 }
