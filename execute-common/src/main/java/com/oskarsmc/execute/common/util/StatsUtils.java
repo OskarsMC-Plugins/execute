@@ -47,9 +47,9 @@ public class StatsUtils {
                             valueMap.putIfAbsent(commandFormatted, 1);
                         }
                     }
+                } else {
+                    valueMap.put("User opted out of this stat.", 1);
                 }
-
-                valueMap.put("User opted out of this stat.", 1);
 
                 return valueMap;
             }
